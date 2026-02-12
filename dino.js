@@ -50,4 +50,4 @@ async function getDinoimage() {
 
 const imgElement = document.createElement("img");
 imgElement.id = "dinoimage";
-document.querySelector("body").appendChild(imgElement);
+document.querySelector("#dinoImage").appendChild(imgElement);
