@@ -16,7 +16,7 @@ async function getDinoname() {
     document.querySelector("#dinoName").textContent = dinoName;
   } catch (err) {
     console.error("No Dinosaurs?", err);
-    response.status(500).send("Error fetching dinosaur names");
+    // response.status(500).send("Error fetching dinosaur names");
   }
 }
 
@@ -44,7 +44,7 @@ async function getDinoimage() {
     changeImage(dinoimage);
   } catch (err) {
     console.error("No Dinosaurs?", err);
-    response.status(500).send("Error fetching dinosaur names");
+    // response.status(500).send("Error fetching dinosaur names");
   }
 }
 

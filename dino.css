@@ -6,7 +6,7 @@
 body {
     text-align: center;
     padding-top: 10rem;
-    background-image: url("/rainforest.jpg");
+    background-image: url("rainforest.jpg");
     background-position: center;
     background-size: cover; 
     background-repeat: no-repeat;

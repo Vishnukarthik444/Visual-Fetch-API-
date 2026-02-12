@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 
 
 app.use(cors())
-app.use(express.static('Dinosaur'))
+app.use(express.static('dinosaur'))
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
