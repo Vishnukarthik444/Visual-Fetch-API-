@@ -13,7 +13,11 @@ async function getDinoname() {
     const data = await response.json();
     let dinoName = data[0].join(" ");
     console.log(dinoName);
-    document.querySelector("#dinoName").textContent = dinoName;
+
+    const nameBox = document.querySelector("#dinoName");
+    nameBox.textContent = dinoName;     
+    nameBox.style.display = "block";     // show after setting text
+
   } catch (err) {
     console.error("No Dinosaurs?", err);
     // response.status(500).send("Error fetching dinosaur names");
@@ -37,7 +41,7 @@ function changeImage(url) {
   imgElement.onload = () => {
     document.querySelector("#dinoImage").style.display = "block";
   };
-  
+
   imgElement.src = url;
 }
 
