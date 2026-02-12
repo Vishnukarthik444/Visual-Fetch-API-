@@ -74,16 +74,28 @@ button:hover {
 /* Image container */
 #dinoImage {
   margin-top: 1.2rem;
+  display: none;
+
+  width: 100%;
+  max-width: 320px;
+  height: 240px;          /* ✅ fixed height */
+
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 #dinoimage {
   width: 100%;
-  max-width: 320px;
-  height: auto;
-  border-radius: 12px;
+  height: 100%;
+
+  object-fit: cover;      /* ✅ keeps fill without distortion */
+  display: block;
 }
 
-/* 📱 Mobile tweaks */
+/*  Mobile tweaks */
 @media (max-width: 480px) {
   .container {
     padding: 1.4rem;

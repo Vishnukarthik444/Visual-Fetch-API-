@@ -34,6 +34,10 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function changeImage(url) {
+  imgElement.onload = () => {
+    document.querySelector("#dinoImage").style.display = "block";
+  };
+  
   imgElement.src = url;
 }
 
